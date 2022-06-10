@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EderActivity">
+
+    <ImageView
+        android:id="@+id/iv_eder_pfp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:src="@drawable/img_4"/>
+
+    <TextView
+        android:id="@+id/tv_ola"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Olá! Meu nome é Ederson Santos!\n Mas pode me chamar de Eder!"
+        android:layout_below="@+id/iv_eder_pfp"
+        android:textSize="23sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tv_info"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="10dp"
+        android:text="Eu tenho 19 anos, e estou no\n 6° periodo de Ciência da Computação, na UNICAP."
+        android:layout_below="@+id/tv_ola"
+        android:textSize="18sp"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/tv_interesses"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="10dp"
+        android:text="Atualmente, estou interessado nas seguintes areas:"
+        android:layout_below="@+id/tv_info"
+        android:textSize="18sp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/tv_desenvolvimento_mobile"
+        android:gravity="center"
+        android:layout_marginTop="6dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="10dp"
+        android:text="- Desenvolvimento Mobile"
+        android:layout_below="@+id/tv_interesses"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/design_default_color_primary" />
+
+    <TextView
+        android:id="@+id/tv_testes"
+        android:gravity="center"
+        android:layout_marginTop="6dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="10dp"
+        android:text="- QA"
+        android:layout_below="@+id/tv_desenvolvimento_mobile"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/design_default_color_secondary"/>
+
+    <TextView
+        android:id="@+id/tv_banco_dados"
+        android:gravity="center"
+        android:layout_marginTop="6dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="10dp"
+        android:text="- Banco de dados"
+        android:layout_below="@+id/tv_testes"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/red" />
+
+    <TextView
+        android:id="@+id/tv_hobbies"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="10dp"
+        android:text="No meu tempo livre\n INFELIZMENTE (socorro)\n eu costumo jogar LoL e LoR, meu pc não é dos bons"
+        android:layout_below="@+id/tv_banco_dados"
+        android:textSize="18sp"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/tv_github"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="10dp"
+        android:text="Para me encontrar no github, basta procurar por \nederapenas"
+        android:layout_below="@+id/tv_hobbies"
+        android:textSize="18sp"
+        android:textColor="@color/black" />
+
+</RelativeLayout>

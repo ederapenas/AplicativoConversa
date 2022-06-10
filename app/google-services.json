@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "215468979199",
+    "project_id": "aplicativoconversa-38f57",
+    "storage_bucket": "aplicativoconversa-38f57.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:215468979199:android:d5dfd32a56407245e6adca",
+        "android_client_info": {
+          "package_name": "br.unicap.c3.aplicativoconversa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "215468979199-us39bs90ugrrbkevsem1t73th1h2vnm5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyANmkVqQ0f4HROs_PwIlEVnqqTZFvtmXpw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "215468979199-us39bs90ugrrbkevsem1t73th1h2vnm5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
