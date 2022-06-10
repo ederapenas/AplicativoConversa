@@ -64,10 +64,22 @@
         android:layout_marginTop="10dp"/>
 
     <Button
-        android:id="@+id/btn_desenvolvedores"
+        android:id="@+id/btn_jogo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/btn_registrar"
+        android:text="Jogo da velha"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:background="@drawable/btn_background"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/btn_desenvolvedores"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_jogo"
         android:text="Desenvolvedores"
         android:textColor="@color/white"
         android:textSize="20sp"

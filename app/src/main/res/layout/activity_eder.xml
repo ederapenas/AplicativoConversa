@@ -8,10 +8,10 @@
 
     <ImageView
         android:id="@+id/iv_eder_pfp"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="70dp"
+        android:layout_marginTop="40dp"
         android:src="@drawable/img_4"/>
 
     <TextView
@@ -29,7 +29,6 @@
     <TextView
         android:id="@+id/tv_info"
         android:gravity="center"
-        android:layout_marginTop="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingHorizontal="10dp"
@@ -41,7 +40,6 @@
     <TextView
         android:id="@+id/tv_interesses"
         android:gravity="center"
-        android:layout_marginTop="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingHorizontal="10dp"
@@ -53,7 +51,6 @@
     <TextView
         android:id="@+id/tv_desenvolvimento_mobile"
         android:gravity="center"
-        android:layout_marginTop="6dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingHorizontal="10dp"
@@ -66,7 +63,6 @@
     <TextView
         android:id="@+id/tv_testes"
         android:gravity="center"
-        android:layout_marginTop="6dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingHorizontal="10dp"
@@ -79,7 +75,6 @@
     <TextView
         android:id="@+id/tv_banco_dados"
         android:gravity="center"
-        android:layout_marginTop="6dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingHorizontal="10dp"
@@ -92,7 +87,6 @@
     <TextView
         android:id="@+id/tv_hobbies"
         android:gravity="center"
-        android:layout_marginTop="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingHorizontal="10dp"
@@ -104,7 +98,6 @@
     <TextView
         android:id="@+id/tv_github"
         android:gravity="center"
-        android:layout_marginTop="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingHorizontal="10dp"
@@ -112,5 +105,40 @@
         android:layout_below="@+id/tv_hobbies"
         android:textSize="18sp"
         android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/tv_pedidos"
+        android:gravity="center"
+        android:layout_below="@id/tv_github"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="10dp"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:text="A cada clique no botão a baixo é um pedido para que eu pare de jogar lol!"/>
+
+    <TextView
+        android:id="@+id/tv_numero"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_below="@id/tv_pedidos"/>
+
+    <Button
+        android:id="@+id/btn_socorro"
+        android:background="@drawable/btn_background"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CLIQUE AQUI!"
+        android:layout_marginTop="5dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tv_numero"/>
 
 </RelativeLayout>

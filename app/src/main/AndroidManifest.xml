@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AplicativoConversa">
         <activity
+            android:name=".JogoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".IgorActivity"
+            android:exported="false" />
+        <activity
             android:name=".EderActivity"
             android:exported="false" />
         <activity

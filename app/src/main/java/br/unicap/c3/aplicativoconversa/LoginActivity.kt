@@ -14,6 +14,7 @@ class LoginActivity : AppCompatActivity() {
     private lateinit var etSenha: EditText
     private lateinit var btnLogin: Button
     private lateinit var btnRegistrar: Button
+    private lateinit var btnJogo: Button
     private lateinit var btnDesenvolvedores: Button
     private lateinit var mAuth: FirebaseAuth
 
@@ -29,6 +30,7 @@ class LoginActivity : AppCompatActivity() {
         etSenha = findViewById(R.id.et_senha)
         btnLogin = findViewById(R.id.btn_login)
         btnRegistrar = findViewById(R.id.btn_registrar)
+        btnJogo = findViewById(R.id.btn_jogo)
         btnDesenvolvedores = findViewById(R.id.btn_desenvolvedores)
 
         btnRegistrar.setOnClickListener{
@@ -41,6 +43,11 @@ class LoginActivity : AppCompatActivity() {
             val senha = etSenha.text.toString()
 
             login(email, senha)
+        }
+
+        btnJogo.setOnClickListener{
+            val intent = Intent(this, JogoActivity::class.java)
+            startActivity(intent)
         }
 
         btnDesenvolvedores.setOnClickListener{
