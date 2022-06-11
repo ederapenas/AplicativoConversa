@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".JogadoresActivity">
+
+    <TextView
+        android:id="@+id/tv_nome_jg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:gravity="center"
+        android:text="Informe o nome dos jogadores:"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        />
+
+    <EditText
+        android:id="@+id/et_jg1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/tv_nome_jg"
+        android:layout_marginTop="100dp"
+        android:hint="Jogador 1"
+        android:paddingLeft="10dp"
+        android:background="@drawable/et_background"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+    <EditText
+        android:id="@+id/et_jg2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/et_jg1"
+        android:layout_marginTop="20dp"
+        android:hint="Jogador 2"
+        android:paddingLeft="10dp"
+        android:background="@drawable/et_background"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+    <Button
+        android:id="@+id/btn_jogar"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_jg2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_background"
+        android:text="Jogar"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+</RelativeLayout>

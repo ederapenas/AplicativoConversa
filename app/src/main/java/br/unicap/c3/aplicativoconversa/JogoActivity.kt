@@ -17,6 +17,9 @@ class JogoActivity : AppCompatActivity() {
     private var primeiroTurno = Turno.XIS
     private var turnoAtual = Turno.BOLA
 
+    lateinit var jogadorUm: String
+    lateinit var jogadorDois: String
+
     private var pontuacaoXis = 0
     private var pontuacaoBola = 0
 
@@ -27,6 +30,9 @@ class JogoActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_jogo)
+
+        jogadorUm = intent.getStringExtra("jogadorUm").toString()
+        jogadorDois = intent.getStringExtra("jogadorDois").toString()
 
         tabuleiroInicial()
     }
@@ -50,11 +56,11 @@ class JogoActivity : AppCompatActivity() {
 
         if(checaVitoria("O")){
             pontuacaoBola++
-            resultado("O venceu!")
+            resultado("$jogadorDois (O) venceu!")
             
         }else if(checaVitoria("X")){
             pontuacaoXis++
-            resultado("X venceu!")
+            resultado("$jogadorUm (X) venceu!")
         }
 
         else if(tabuleiroCheio()){
@@ -97,7 +103,7 @@ class JogoActivity : AppCompatActivity() {
 
     private fun resultado(title: String){
 
-        val mensagem = "\nX: $pontuacaoXis \n\nO: $pontuacaoBola"
+        val mensagem = "\n$jogadorUm (X): $pontuacaoXis \n\n$jogadorDois (O): $pontuacaoBola"
         AlertDialog.Builder(this)
             .setTitle(title)
             .setMessage(mensagem)
@@ -150,9 +156,9 @@ class JogoActivity : AppCompatActivity() {
     private fun setTurnLabel() {
         var turnoTexto = ""
         if (turnoAtual == Turno.XIS) {
-            turnoTexto = "Vez do X"
+            turnoTexto = "Vez do $jogadorUm (X)"
         } else if (turnoAtual == Turno.BOLA) {
-            turnoTexto = "Vez do O"
+            turnoTexto = "Vez do $jogadorDois (O)"
         }
 
 

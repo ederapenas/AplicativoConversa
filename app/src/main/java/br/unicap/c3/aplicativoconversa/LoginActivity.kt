@@ -46,7 +46,7 @@ class LoginActivity : AppCompatActivity() {
         }
 
         btnJogo.setOnClickListener{
-            val intent = Intent(this, JogoActivity::class.java)
+            val intent = Intent(this, JogadoresActivity::class.java)
             startActivity(intent)
         }
 
