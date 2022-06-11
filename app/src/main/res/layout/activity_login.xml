@@ -6,13 +6,15 @@
     android:layout_height="match_parent"
     tools:context=".LoginActivity">
 
-    <ImageView
+    <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/unicap_logo"
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="70dp"
-        android:src="@drawable/img_1" />
+        android:src="@drawable/img_1"
+        android:background="@color/white"
+        app:shapeAppearanceOverlay="@style/roundimageview"/>
 
     <EditText
         android:id="@+id/et_email"
@@ -44,47 +46,47 @@
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_below="@id/et_senha"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_background"
         android:text="Entrar"
         android:textColor="@color/white"
-        android:textSize="20sp"
-        android:background="@drawable/btn_background"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp"/>
+        android:textSize="20sp" />
 
     <Button
         android:id="@+id/btn_registrar"
-        android:layout_width="150dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/btn_login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_background"
         android:text="Registrar-se"
         android:textColor="@color/white"
-        android:textSize="20sp"
-        android:background="@drawable/btn_background"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp"/>
+        android:textSize="20sp" />
 
     <Button
         android:id="@+id/btn_jogo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/btn_registrar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_background"
         android:text="Jogo da velha"
         android:textColor="@color/white"
-        android:textSize="20sp"
-        android:background="@drawable/btn_background"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp"/>
+        android:textSize="20sp" />
 
     <Button
         android:id="@+id/btn_desenvolvedores"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/btn_jogo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_background"
         android:text="Desenvolvedores"
         android:textColor="@color/white"
-        android:textSize="20sp"
-        android:background="@drawable/btn_background"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp"/>
+        android:textSize="20sp" />
 
 </RelativeLayout>

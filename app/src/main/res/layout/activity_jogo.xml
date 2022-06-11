@@ -7,15 +7,18 @@
     tools:context=".JogoActivity">
 
     <TextView
-        android:id="@+id/tv_vez"
+        android:id="@+id/titulojogo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Vez do X"
-        android:textColor="@color/red"
+        android:text="Jogo da Velha!"
+        android:textColor="#A4243B"
         android:textSize="40sp"
+        android:layout_marginTop="50dp"
+        android:fontFamily="sans-serif-black"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent"
+        />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -34,7 +37,7 @@
             <Button
                 android:id="@+id/a1"
                 style="@style/coluna"
-                android:text="X"/>
+                />
 
             <View
                 style="@style/linhaVertical"/>
@@ -42,7 +45,7 @@
             <Button
                 android:id="@+id/a2"
                 style="@style/coluna"
-                android:text="X"/>
+                />
 
             <View
                 style="@style/linhaVertical"/>
@@ -50,7 +53,7 @@
             <Button
                 android:id="@+id/a3"
                 style="@style/coluna"
-                android:text="X"/>
+                />
 
         </LinearLayout>
 
@@ -63,7 +66,7 @@
             <Button
                 android:id="@+id/b1"
                 style="@style/coluna"
-                android:text="X"/>
+                />
 
             <View
                 style="@style/linhaVertical"/>
@@ -71,7 +74,7 @@
             <Button
                 android:id="@+id/b2"
                 style="@style/coluna"
-                android:text="X"/>
+                />
 
             <View
                 style="@style/linhaVertical"/>
@@ -79,7 +82,7 @@
             <Button
                 android:id="@+id/b3"
                 style="@style/coluna"
-                android:text="X"/>
+                />
 
         </LinearLayout>
 
@@ -92,7 +95,7 @@
             <Button
                 android:id="@+id/c1"
                 style="@style/coluna"
-                android:text="X"/>
+                />
 
             <View
                 style="@style/linhaVertical"/>
@@ -100,7 +103,7 @@
             <Button
                 android:id="@+id/c2"
                 style="@style/coluna"
-                android:text="X"/>
+                />
 
             <View
                 style="@style/linhaVertical"/>
@@ -108,11 +111,24 @@
             <Button
                 android:id="@+id/c3"
                 style="@style/coluna"
-                android:text="X"/>
+                />
 
         </LinearLayout>
 
-
     </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvvez"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="520sp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Vez do O"
+        android:textColor="#A4243B"
+        android:textSize="30sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

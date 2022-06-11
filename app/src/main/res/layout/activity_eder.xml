@@ -23,7 +23,7 @@
         android:text="Olá! Meu nome é Ederson Santos!\n Mas pode me chamar de Eder!"
         android:layout_below="@+id/iv_eder_pfp"
         android:textSize="23sp"
-        android:textColor="@color/black"
+        android:textColor="?android:textColorPrimary"
         android:textStyle="bold"/>
 
     <TextView
@@ -35,7 +35,7 @@
         android:text="Eu tenho 19 anos, e estou no\n 6° periodo de Ciência da Computação, na UNICAP."
         android:layout_below="@+id/tv_ola"
         android:textSize="18sp"
-        android:textColor="@color/black" />
+        android:textColor="?android:textColorPrimary" />
 
     <TextView
         android:id="@+id/tv_interesses"
@@ -46,7 +46,7 @@
         android:text="Atualmente, estou interessado nas seguintes areas:"
         android:layout_below="@+id/tv_info"
         android:textSize="18sp"
-        android:textColor="@color/black"/>
+        android:textColor="?android:textColorPrimary"/>
 
     <TextView
         android:id="@+id/tv_desenvolvimento_mobile"
@@ -93,7 +93,7 @@
         android:text="No meu tempo livre\n INFELIZMENTE (socorro)\n eu costumo jogar LoL e LoR, meu pc não é dos bons"
         android:layout_below="@+id/tv_banco_dados"
         android:textSize="18sp"
-        android:textColor="@color/black" />
+        android:textColor="?android:textColorPrimary" />
 
     <TextView
         android:id="@+id/tv_github"
@@ -104,7 +104,7 @@
         android:text="Para me encontrar no github, basta procurar por \nederapenas"
         android:layout_below="@+id/tv_hobbies"
         android:textSize="18sp"
-        android:textColor="@color/black" />
+        android:textColor="?android:textColorPrimary" />
 
     <TextView
         android:id="@+id/tv_pedidos"
@@ -114,7 +114,7 @@
         android:layout_height="wrap_content"
         android:paddingHorizontal="10dp"
         android:textSize="18sp"
-        android:textColor="@color/black"
+        android:textColor="?android:textColorPrimary"
         android:text="A cada clique no botão a baixo é um pedido para que eu pare de jogar lol!"/>
 
     <TextView
@@ -123,7 +123,7 @@
         android:layout_height="wrap_content"
         android:text="0"
         android:textSize="18sp"
-        android:textColor="@color/black"
+        android:textColor="?android:textColorPrimary"
         android:textStyle="bold"
         android:gravity="center"
         android:layout_below="@id/tv_pedidos"/>

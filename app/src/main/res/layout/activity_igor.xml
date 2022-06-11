@@ -1,9 +1,72 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:background="#A4243B"
     tools:context=".IgorActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/titulo1"
+        android:text="Desenvolvedor:"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="#FDFDFF"
+        android:textStyle="normal"
+        android:fontFamily="sans-serif" />
+    <com.google.android.material.imageview.ShapeableImageView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:id="@+id/imageigor"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:src="@drawable/img_5"
+        app:shapeAppearanceOverlay="@style/roundimageview"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/titulo2"
+        android:text="Igor Freire"
+        android:gravity="center"
+        android:textSize="40sp"
+        android:textColor="#FDFDFF"
+        android:textStyle="italic"
+        android:fontFamily="sans-serif-black" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/descricao"
+        android:text="- Pai solteiro de 2 porquinhas da índia\n- Melhor Kirby recifense em Super Smash Bros. Ultimate\n- Lolzeiro apenas socialmente\n- Deus da apresentação em slides\n- Carente de abraços"
+        android:gravity="left"
+        android:textSize="20sp"
+        android:textColor="#FDFDFF"
+        android:textStyle="normal"
+        android:fontFamily="sans-serif"
+        android:layout_marginTop="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="parent"/>
+    <Button
+        android:id="@+id/btn_igorabraco"
+        android:layout_gravity="center"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_ederson"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bluebtn_background"
+        android:text="Enviar abraço"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        />
+</androidx.appcompat.widget.LinearLayoutCompat>

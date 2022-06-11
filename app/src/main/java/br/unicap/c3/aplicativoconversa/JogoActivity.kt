@@ -21,6 +21,7 @@ class JogoActivity : AppCompatActivity() {
     private var pontuacaoBola = 0
 
     private lateinit var tvTurno: TextView
+
     private var listaTabuleiro = mutableListOf<Button>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -47,7 +48,7 @@ class JogoActivity : AppCompatActivity() {
             return
         addAoTabuleiro(view)
 
-        if(checaVitoria("0")){
+        if(checaVitoria("O")){
             pontuacaoBola++
             resultado("O venceu!")
             
@@ -56,13 +57,13 @@ class JogoActivity : AppCompatActivity() {
             resultado("X venceu!")
         }
 
-        if(tabuleiroCheio()){
+        else if(tabuleiroCheio()){
             resultado("Empate")
         }
     }
 
     private fun checaVitoria(s: String): Boolean {
-        if(match(findViewById(R.id.a1),s) && match(findViewById(R.id.a2), s) && match(findViewById(R.id.a3), s)){
+        if(match(findViewById(R.id.a1),s) && match(findViewById(R.id.a2),s) && match(findViewById(R.id.a3),s)){
             return true
         }
         if(match(findViewById(R.id.b1),s) && match(findViewById(R.id.b2), s) && match(findViewById(R.id.b3), s)){
@@ -96,7 +97,7 @@ class JogoActivity : AppCompatActivity() {
 
     private fun resultado(title: String){
 
-        val mensagem = "\nX: $pontuacaoXis \n\n O: $pontuacaoBola"
+        val mensagem = "\nX: $pontuacaoXis \n\nO: $pontuacaoBola"
         AlertDialog.Builder(this)
             .setTitle(title)
             .setMessage(mensagem)
@@ -154,8 +155,11 @@ class JogoActivity : AppCompatActivity() {
             turnoTexto = "Vez do O"
         }
 
-        tvTurno = findViewById(R.id.tv_vez)
+
+
+        tvTurno = findViewById(R.id.tvvez)
         tvTurno.text = turnoTexto
 
     }
+
 }
