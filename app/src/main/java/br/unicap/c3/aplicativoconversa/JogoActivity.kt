@@ -35,6 +35,7 @@ class JogoActivity : AppCompatActivity() {
         jogadorDois = intent.getStringExtra("jogadorDois").toString()
 
         tabuleiroInicial()
+        setTurnLabel()
     }
 
     private fun tabuleiroInicial(){

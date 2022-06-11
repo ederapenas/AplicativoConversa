@@ -55,7 +55,7 @@
 
     <Button
         android:id="@+id/btn_registrar"
-        android:layout_width="wrap_content"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_below="@id/btn_login"
         android:layout_centerHorizontal="true"
@@ -67,11 +67,11 @@
 
     <Button
         android:id="@+id/btn_jogo"
-        android:layout_width="wrap_content"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_below="@id/btn_registrar"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="50dp"
         android:background="@drawable/btn_background"
         android:text="Jogo da velha"
         android:textColor="@color/white"
@@ -79,7 +79,7 @@
 
     <Button
         android:id="@+id/btn_desenvolvedores"
-        android:layout_width="wrap_content"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_below="@id/btn_jogo"
         android:layout_centerHorizontal="true"

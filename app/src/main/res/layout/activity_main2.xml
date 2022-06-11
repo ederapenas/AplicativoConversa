@@ -15,19 +15,19 @@
         android:textSize="30sp"
         android:textStyle="bold"
         android:textColor="?android:textColorPrimary"
-        android:layout_marginTop="200dp"/>
+        android:layout_marginTop="250dp"/>
 
     <Button
         android:id="@+id/btn_ederson"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_below="@id/tv_desenvolvedores"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_background"
         android:text="Ederson"
         android:textColor="@color/white"
-        android:textSize="20sp"
-        android:background="@drawable/btn_background"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp"/>
+        android:textSize="20sp" />
 
     <Button
         android:id="@+id/btn_igor"
